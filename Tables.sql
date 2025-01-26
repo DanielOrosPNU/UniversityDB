@@ -25,7 +25,7 @@ FirstName NVARCHAR(50) NOT NULL,
 LastName NVARCHAR(50) NOT NULL,    
 DateOfBirth DATE NOT NULL,    
 Email NVARCHAR(100) UNIQUE NOT NULL,    
-Phone NVARCHAR(15) UNIQUE NOT NULL,  
+Phone NVARCHAR(15) UNIQUE NOT NULL 
 );  
 GO    
     
@@ -70,14 +70,14 @@ FacultyID INT
 GO    
     
 CREATE TABLE Courses_Professors (    
-    CourseID INT,    
+CourseID INT,    
 ProfessorID INT  
 );  
 GO    
     
 CREATE TABLE Students_Clubs (    
-    StudentID INT,    
-ClubID INT,  
+StudentID INT,    
+ClubID INT 
 );  
 GO    
     
@@ -85,7 +85,7 @@ CREATE TABLE Events (
 EventID INT PRIMARY KEY IDENTITY,    
 EventName NVARCHAR(100) NOT NULL,    
 EventDate DATE NOT NULL,    
-EventDescription NVARCHAR(MAX),  
+EventDescription NVARCHAR(MAX)  
 );  
 GO    
     
@@ -95,7 +95,8 @@ Title NVARCHAR(100) NOT NULL,
 Author NVARCHAR(100) NOT NULL,    
 PublicationYear INT,    
 ISBN NVARCHAR(20),    
-AvailableCopies INT  );  
+AvailableCopies INT  
+);  
 GO    
     
 CREATE TABLE BookLoans (    
@@ -103,7 +104,7 @@ LoanID INT PRIMARY KEY IDENTITY,
 BookID INT,    
 StudentID INT,    
 LoanDate DATE,    
-ReturnDate DATE  );  
+ReturnDate DATE );  
 GO    
     
 CREATE TABLE Scholarships (    
